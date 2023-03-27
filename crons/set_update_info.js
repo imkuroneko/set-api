@@ -48,7 +48,7 @@ const script = () => new cron.CronJob(
                     });
 
                     // Eliminar el archivo txt (ya no nos sirve)
-                    fs.unlinkSync(path.resolve(`./temp/ruc${i}.zip`));
+                    fs.unlinkSync(path.resolve(`./temp/ruc${i}.txt`));
                 });
             }
         } catch(error) {
